@@ -2,4 +2,4 @@
 
 ## What are _Labels_?
 
-Labels are applied by Kubernetes to nodes.  
+Labels are applied by Kubernetes to nodes. 
