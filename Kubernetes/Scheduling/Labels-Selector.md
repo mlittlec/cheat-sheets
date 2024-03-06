@@ -76,7 +76,7 @@ As such `nodeSelector` is an earlier (more primitive) feature provided by Kubern
 
 ### How do nodeSelectors work?
 
-Applying a `nodeSelecttor` to a Pod requires a series of steps.
+Applying a `nodeSelector` to a Pod requires a series of steps.
 
 1. Get the name of the Nodes and their labels.
 
@@ -84,7 +84,7 @@ Applying a `nodeSelecttor` to a Pod requires a series of steps.
    kubectl get nodes --show-labels
    ```
 
-1. Decide which node(s) you want to assign a `key-value` lable to.
+1. Decide which node(s) you want to assign a `key-value` label to.
 
    ```text
    kubectl label nodes <node-name> <key>=<value>
@@ -123,7 +123,7 @@ An example manifest file that you could define might look like this:
 
 1. Create the manifest file.
 
-    ```
+    ```shell
     cat << 'EOF' > ~/httpd-test-pod.yaml
     apiVersion: v1
     kind: Pod
